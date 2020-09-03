@@ -1,0 +1,50 @@
+
+
+.nav-shadow {
+  -webkit-box-shadow: 0px 10px 46px -19px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 46px -19px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 46px -19px rgba(0, 0, 0, 0.75);
+}
+
+.bg-changer
+{
+    animation-name: change-bg;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@keyframes change-bg
+{
+    0%{ background-image:url(../images/banner1.jpeg)}
+    20%{background-image:url(../images/banner2.jpeg)}
+    40%{background-image:url(../images/banner3.jpeg)}
+    60%{background-image:url(../images/banner4.jpeg)}
+    80%{background-image:url(../images/banner5.jpeg)}
+    100%{background-image:url(../images/banner6.jpeg)}
+}
+
+
+.cap-img
+{
+    width:100%;
+}
+
+@media only screen and (max-width: 767px) {
+    
+    .cap-img
+    {
+        height:100%;
+        width:auto;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .cap-img
+    {
+        height:100%;
+        width:auto;
+    }
+  }
