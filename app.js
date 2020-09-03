@@ -17,7 +17,7 @@ $(window).on('load',function() {
             {
               scrollTop: target.offset().top - 90,
             },
-            800,
+            1200,
             "easeInOutExpo"
           );
   
