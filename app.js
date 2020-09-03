@@ -2,7 +2,7 @@ $(window).on('load',function() {
      // Animate loader off screen
      jQuery(".se-pre-con").fadeOut("slow");
    });
-   
+
    $(document).ready(function () {
     // Smooth scroll for the navigation and links with .scrollto classes
     $("a").on("click", function () {
@@ -17,7 +17,7 @@ $(window).on('load',function() {
             {
               scrollTop: target.offset().top - 90,
             },
-            1500,
+            800,
             "easeInOutExpo"
           );
   
