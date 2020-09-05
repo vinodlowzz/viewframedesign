@@ -548,61 +548,24 @@
             <div class="col-lg-12 mt-lg-0 mt-5 contact-right">
               <h4 class="mb-4">Get In Touch</h4>
               <form action="#" method="post">
-                <label
-                  ><span class="fa mr-2 fa-user" aria-hidden="true"></span>
-                  Name</label
-                >
-                <input
-                  type="text"
-                  name="Name"
-                  value="Name"
-                  onfocus="this.value = '';"
-                  onblur="if (this.value == '') {this.value = 'Name';}"
-                  required=""
-                />
+                <label  ><span class="fa mr-2 fa-user" aria-hidden="true">
+
+                </span> Name</label>
+                <input type="text"  name="name" placeholder="Name" required />
                 <div class="clearfix"></div>
-                <label
-                  ><span
-                    class="fa mr-2 fa-envelope-open"
-                    aria-hidden="true"
-                  ></span
-                  >Email</label
-                >
-                <input
-                  type="email"
-                  name="Email"
-                  value="Email"
-                  onfocus="this.value = '';"
-                  onblur="if (this.value == '') {this.value = 'Email';}"
-                  required=""
-                />
+
+                <label><span class="fa mr-2 fa-envelope-open" aria-hidden="true"></span>Email</label>
+                <input type="email" name="email" placeholder="Email id" required/>
                 <div class="clearfix"></div>
-                <label
-                  ><span class="fa mr-2 fa-phone" aria-hidden="true"></span
-                  >Phone</label
-                >
-                <input
-                  type="text"
-                  name="Phone"
-                  value="Phone"
-                  onfocus="this.value = '';"
-                  onblur="if (this.value == '') {this.value = 'Phone';}"
-                  required=""
-                />
+
+                <label><span class="fa mr-2 fa-phone" aria-hidden="true"></span>Phone</label>
+                <input type="text" name="num" placeholder="Contact no"  required>
                 <div class="clearfix"></div>
-                <label
-                  ><span class="fa mr-2 fa-edit" aria-hidden="true"></span
-                  >Message</label
-                >
-                <textarea
-                  name="Message"
-                  onfocus="this.value = '';"
-                  onblur="if (this.value == '') {this.value = 'Message...';}"
-                  required=""
-                >
-  Message...</textarea
-                >
-                <button type="submit" class="btn">Submit</button>
+
+                <label><span class="fa mr-2 fa-edit" aria-hidden="true"></span>Message</label>
+                <textarea name="query" placeholder="Query"  required></textarea>
+
+                <button type="submit" name="submit" class="btn">Submit</button>
               </form>
             </div>
           </div>
@@ -673,3 +636,4 @@
     <script src="app.js"></script>
 </body>
 </html>
+
