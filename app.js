@@ -5,7 +5,7 @@ $(window).on('load',function() {
 
    $(document).ready(function () {
     // Smooth scroll for the navigation and links with .scrollto classes
-    $("a").on("click", function () {
+    $(".scroll").on("click", function () {
       if (
         location.pathname.replace(/^\//, "") ==
           this.pathname.replace(/^\//, "") &&
@@ -17,7 +17,7 @@ $(window).on('load',function() {
             {
               scrollTop: target.offset().top - 90,
             },
-            1200,
+            1500,
             "easeInOutExpo"
           );
   
