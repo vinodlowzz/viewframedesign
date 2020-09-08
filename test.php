@@ -9,7 +9,7 @@
    </head>
    <body>
      Hey There
-     <form  action="index.php" method="post">
+     <form  action="test.php" method="post">
       <input type="submit" name="submit" value="">
      </form>
        
