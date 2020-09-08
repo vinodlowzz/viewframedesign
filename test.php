@@ -27,13 +27,15 @@ if(isset($_POST['submit']))
 {
     $mail = new PHPMailer(true);
 
-    try {                    // Enable verbose debug output
-         $mail->Host='smtp.gmail.com';
-         $mail->Port=587;
-         $mail->SMTPAuth=true;
-         $mail->SMTPSecure='tls';
-         $mail->Username='info.viewframe@gmail.com';
-         $mail->Password='vfdesign2020';
+    try {
+      
+
+         $mail->isSMTP();                                            // Send using SMTP
+        $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
+        $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+        $mail->Username   = 'info.viewframe@gmail.com';                     // SMTP username
+        $mail->Password   = 'vfdesign2020';                               // SMTP password
+        $mail->Port       = 587;             
 
         $mail->setFrom('info.viewframe@gmail.com','View Frame Design');
         $mail->addAddress("sharookhanb@gmail.com");
