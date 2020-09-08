@@ -36,7 +36,7 @@ if(isset($_POST['submit']))
     try { 
          $mail->isSMTP();                        // Enable verbose debug output
          $mail->Host='smtp.gmail.com';
-         $mail->Port=465;
+         $mail->Port=587;
          $mail->SMTPAuth=true;
          $mail->SMTPSecure='tls';
          $mail->Username='info.viewframe@gmail.com';
