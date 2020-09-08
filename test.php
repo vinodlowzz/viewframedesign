@@ -12,15 +12,15 @@
        
    </body>
  </html>
-<?php
+ <?php
 
     
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require 'PHPMailer/src/Exception.php';
-require 'PHPMailer/src/PHPMailer.php';
-require 'PHPMailer/src/SMTP.php';
+require 'PHPMailer/PHPMailer/src/Exception.php';
+require 'PHPMailer/PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/PHPMailer/src/SMTP.php';
 
         
 if(isset($_POST['submit']))
@@ -29,7 +29,6 @@ if(isset($_POST['submit']))
 
     try {                    // Enable verbose debug output
          $mail->Host='smtp.gmail.com';
-         $mail->isSMTP();
          $mail->Port=587;
          $mail->SMTPAuth=true;
          $mail->SMTPSecure='tls';
