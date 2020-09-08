@@ -31,11 +31,6 @@ require 'PHPMailer/PHPMailer/src/SMTP.php';
 if(isset($_POST['submit']))
 {
 
-  $name   =$_REQUEST['name'];
-  $num    =$_REQUEST['num'];
-  $email  =$_REQUEST['email'];
-  $query  =$_REQUEST['query'];
-
     $mail = new PHPMailer(true);
 
     try { 
@@ -54,8 +49,8 @@ if(isset($_POST['submit']))
     
         // Content
         $mail->isHTML(true);           
-        $mail->Subject = $name . '\'s Enquiry';
-        $mail->Body    = 'Name:- ' . $name . ' <br> Mobile:-' . $num . ' <br>Email:- ' . $email . '<br>Query:- '. $query . '<br> <b>Thank you,</b>';
+        $mail->Subject = ' Enquiry';
+        $mail->Body    = ' Testing';
     
         $mail->send();
         echo '<script> alert(\'Thank you, We will get back to u soon\');</script>';
