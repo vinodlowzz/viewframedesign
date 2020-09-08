@@ -34,7 +34,7 @@ if(isset($_POST['submit']))
     $mail = new PHPMailer(true);
 
     try { 
-       // $mail->isSMTP();                        // Enable verbose debug output
+         $mail->isSMTP();                        // Enable verbose debug output
          $mail->Host='smtp.gmail.com';
          $mail->Port=587;
          $mail->SMTPAuth=true;
