@@ -547,7 +547,7 @@
           <div class="row contact-grids">
             <div class="col-lg-12 mt-lg-0 mt-5 contact-right">
               <h4 class="mb-4">Get In Touch</h4>
-              <form action="#" method="post">
+              <form action="index.php" method="post">
                 <label  ><span class="fa mr-2 fa-user" aria-hidden="true">
 
                 </span> Name</label>
