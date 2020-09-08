@@ -53,10 +53,11 @@ if(isset($_POST['submit']))
         $mail->Body    = ' Testing';
     
         $mail->send();
-        echo '<script> alert(\'Thank you, We will get back to u soon\');</script>';
-    } catch (Exception $e) {
-        echo '<script> alert(\'Oops something went wrong..!!! <br> {$mail->ErrorInfo}\');</script>';
-    }
+        
+    echo 'Message has been sent';
+} catch (Exception $e) {
+    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+}
 }
         
 ?>
