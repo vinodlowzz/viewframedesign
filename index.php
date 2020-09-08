@@ -609,7 +609,21 @@
       </footer>
       <!-- //footer -->
   
-     
+      <!-- popup for btn -->
+      <div id="popup1" class="overlay">
+        <div class="popup">
+          <img src="images/banner.jpg" alt="Popup Image" class="img-fluid" />
+          <p class="mt-4 editContent">
+            Nulla viverra pharetra se, eget pulvinar neque pharetra ac int.
+            placerat placerat dolor. Vestibulum at dui nunc. Nulla viverra
+            pharetra sem, eget pulvinar neque pharetra ac int. lorem ipsum
+            Vestibulum. placerat placerat dolor. Vestibulum at dui nunc. Nullam eu
+            elit neque lectus.
+          </p>
+          <a class="close" href="#">&times;</a>
+        </div>
+      </div>
+      <!-- //popup for btn -->
   
       
       
