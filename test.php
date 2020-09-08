@@ -29,6 +29,7 @@ if(isset($_POST['submit']))
 
     try {                    // Enable verbose debug output
          $mail->Host='smtp.gmail.com';
+         $mail->isSMTP();
          $mail->Port=587;
          $mail->SMTPAuth=true;
          $mail->SMTPSecure='tls';
