@@ -35,7 +35,7 @@ if(isset($_POST['submit']))
          $mail->Username='info.viewframe@gmail.com';
          $mail->Password='vfdesign2020';
 
-        $mail->setFrom('info.viewframe@gmail.com','View Frame Design',0);
+        $mail->setFrom('info.viewframe@gmail.com','View Frame Design');
         $mail->addAddress("sharookhanb@gmail.com");
         $mail->addReplyTo('info.viewframe@gmail.com','view Frame Design');
     
